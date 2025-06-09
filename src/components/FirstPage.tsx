@@ -6,7 +6,7 @@ import { ButtonGreenLong, ButtonGreenShort } from "./Button";
 
 const FirstPage = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen md:h-[calc(100vh + 10vh)]">
       <div className="md:h-[71.5%] h-[46.5%] bg-black py-4 md:px-8 px-4">
         {/* Header */}
         <div className="flex items-center justify-between">
