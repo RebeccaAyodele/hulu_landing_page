@@ -6,7 +6,7 @@ import { ButtonGreenLong } from "./Button";
 
 const SecondPage = () => {
   return (
-    <div className="bg-black md:my-[4.6rem] p-4 text-center justify-center items-center w-full">
+    <div className="bg-black md:mt-[4.6rem] p-4 text-center justify-center items-center w-full">
       <div className="flex flex-col justify-center items-center p-16">
         <div className=" md:w-[50%]">
           <p className="text-green-400 pb-4">INCLUDED IN ALL PLANS</p>
@@ -64,7 +64,7 @@ const SecondPage = () => {
           <ButtonGreenLong text="Start your free trial" />
           <p className="text-[10px] text-gray-400 my-4">Hulu (With Ads) + Live TV plan $82.99/mo. after 3-day free trial (if any) unless canceled. Cancel anytime. Regional restrictions, blackouts and Live TV terms apply. Access content from each service separately. Location data required to watch certain content. Offer valid for eligible subscribers only. See details.</p>
 
-          <p><a href="#" className="underline text-gray-300 md:text-md text-sm mt-4">VIEW CHANNELS IN YOUR AREA →</a></p>
+          <p className="mb-24"><a href="#" className="underline text-gray-300 md:text-md text-sm mt-4">VIEW CHANNELS IN YOUR AREA →</a></p>
         </div>
       </div>
     </div>
