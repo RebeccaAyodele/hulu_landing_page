@@ -10,7 +10,7 @@ const SecondPage = () => {
       <div className="flex flex-col justify-center items-center p-16">
         <div className=" md:w-[50%]">
           <p className="text-green-400 pb-4">INCLUDED IN ALL PLANS</p>
-          <h1 className="text-white text-[4rem] font-bold pb-4">
+          <h1 className="text-white md:text-[4rem] text-3xl font-bold pb-4">
             All The TV You Love
           </h1>
           <p className="text-white text-lg pb-4">
