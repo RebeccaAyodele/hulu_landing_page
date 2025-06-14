@@ -3,23 +3,11 @@ import { JSX } from "react";
 import checkmark from "../assets/checkmark.svg";
 import disney from "../assets/disney+.png";
 import hulu from "../assets/hulu.png";
-import espn from "../assets/espn.png"
+import espn from "../assets/espn.png";
+import max from "../assets/max.png";
+import hulu_live from"../assets/hulu_live.png"
 
 type OptionType = "option1" | "option2" | "option3" | "option4";
-
-const firstColumnData = [
-  "Monthly Price",
-  "Subscriptions included in each plan",
-  "Hulu streaming library with tons of episodes and movies",
-  "Endless entertainment with Disney+",
-  "Most new episodes on Hulu the day after they air†",
-  "Access to award-winning Hulu Originals",
-  "Watch on your favorite devices",
-  "No ads in Hulu streaming library",
-  "No ads on Disney+",
-  "Download and watch on Hulu",
-  "Download and watch on Disney+",
-];
 
 const optionData: Record<
   OptionType,
@@ -37,8 +25,10 @@ const optionData: Record<
             <img src={disney} className="w-16 h-8" alt="disney" />
             <img src={hulu} className="w-10 h-6" alt="hulu" />
           </div>
-          <p className="text-xs font-semibold my-2">Disney+, Hulu Bundle Basic</p>
-          <button className="bg-white text-sm text-black rounded font-bold px-[28%] h-[3rem] hover:bg-white/80 my-2">
+          <p className="text-xs font-semibold my-2">
+            Disney+, Hulu Bundle Basic
+          </p>
+          <button className="bg-white text-sm text-black rounded font-bold px-[28%] h-[2.5rem] hover:bg-white/80 my-2">
             $10 / MONTH
           </button>
           <p className="text-[10px] font-extrabold">SAVE 44%*</p>
@@ -48,16 +38,19 @@ const optionData: Record<
             <img src={disney} className="w-16 h-8" alt="disney" />
             <img src={hulu} className="w-10 h-6" alt="hulu" />
           </div>
-          <p className="text-xs font-semibold my-2">Disney+, Hulu Bundle Basic</p>
-          <button className="bg-white text-sm text-black rounded font-bold px-[28%]  h-[3rem] hover:bg-white/80 my-2">
-            $19 / MONTH 
+          <p className="text-xs font-semibold my-2">
+            Disney+, Hulu Bundle Basic
+          </p>
+          <button className="bg-white text-sm text-black rounded font-bold px-[28%] h-[2.5rem] hover:bg-white/80 my-2">
+            $19 / MONTH
           </button>
-          <p className="text-[10px] font-extrabold">SAVE 42%*</p>
+          <p className="text-[10px] font-extrabold">SAVE 42%</p>
         </div>
       </div>
     ),
     tableRows: [
       [
+        "Monthly Price",
         <p className="text-sm">
           <span className="block text-xs text-gray-400 line-through">
             $19.98/mo.
@@ -72,50 +65,80 @@ const optionData: Record<
         </p>,
       ],
       [
+        "Subscriptions included in each plan",
         <p className="text-sm">Disney+ and Hulu</p>,
         <p className="text-sm">Disney+ and Hulu</p>,
       ],
       [
+        "Hulu streaming library with tons of episodes and movies",
         <img src={checkmark} alt="checkmark" className="inline" />,
         <img src={checkmark} alt="checkmark" className="inline" />,
       ],
       [
+        "Endless entertainment with Disney+",
         <img src={checkmark} alt="checkmark" className="inline" />,
         <img src={checkmark} alt="checkmark" className="inline" />,
       ],
       [
+        "Most new episodes on Hulu the day after they air†",
         <img src={checkmark} alt="checkmark" className="inline" />,
         <img src={checkmark} alt="checkmark" className="inline" />,
       ],
       [
+        "Access to award-winning Hulu Originals",
         <img src={checkmark} alt="checkmark" className="inline" />,
         <img src={checkmark} alt="checkmark" className="inline" />,
       ],
       [
+        "Watch on your favorite devices",
         <img src={checkmark} alt="checkmark" className="inline" />,
         <img src={checkmark} alt="checkmark" className="inline" />,
       ],
-      ["-", <img src={checkmark} alt="checkmark" className="inline" />],
-      ["-", <p className="text-sm w-[60%] mx-auto">Ads will be served in select live and linear content</p>],
-      ["-", <img src={checkmark} alt="checkmark" className="inline" />],
-      ["-", <img src={checkmark} alt="checkmark" className="inline" />],
+      [
+        "No ads in Hulu streaming library",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "No ads on Disney+",
+        "-",
+        <p className="text-sm w-[60%] mx-auto">
+          Ads will be served in select live and linear content
+        </p>,
+      ],
+      [
+        "Download and watch on Hulu",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Download and watch on Disney+",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
     ],
   },
+
   option2: {
     topContent: (
-      <div className="flex justify-between md:w-[75%] w-full mx-auto">
+      <div className="flex items-end justify-between md:w-[75%] mx-auto w-full">
         <div className="md:w-1/3 hidden md:block"></div>
         <div className="md:w-1/3 w-1/2 flex flex-col justify-center items-center">
+          <button className="text-[10px] font-bold text-black bg-green-500 rounded-2xl p-2">
+            BEST VALUE
+          </button>
           <div className="flex items-center gap-2 my-4">
             <img src={disney} className="w-16 h-8" alt="disney" />
             <img src={hulu} className="w-10 h-6" alt="hulu" />
             <img src={espn} alt="espn" className="w-16" />
           </div>
-          <p className="text-xs font-semibold my-2">Disney+, Hulu, ESPN+ Bundle Basic</p>
-          <button className="bg-white text-sm text-black rounded font-bold px-[28%]  h-[3rem] hover:bg-white/80 my-2">
+          <p className="text-xs font-semibold my-2">
+            Disney+, Hulu, ESPN+ Bundle Basic
+          </p>
+          <button className="bg-white text-sm text-black rounded font-bold px-[22%]  h-[2.5rem] hover:bg-white/80 my-2">
             $16.99 / MONTH
           </button>
-          <p className="text-[10px] font-extrabold">SAVE 44%*</p>
+          <p className="text-[10px] font-extrabold">SAVE 46%*</p>
         </div>
         <div className="md:w-1/3 w-1/2 flex flex-col justify-center items-center">
           <div className="flex items-center gap-2 my-4">
@@ -123,8 +146,10 @@ const optionData: Record<
             <img src={hulu} className="w-10 h-6" alt="hulu" />
             <img src={espn} alt="espn" className="w-16" />
           </div>
-          <p className="text-xs font-semibold my-2">Disney+, Hulu, ESPN+ Bundle Premium</p>
-          <button className="bg-white text-sm text-black rounded font-bold px-[28%]  h-[3rem] hover:bg-white/80 my-2">
+          <p className="text-xs font-semibold my-2">
+            Disney+, Hulu, ESPN+ Bundle Premium
+          </p>
+          <button className="bg-white text-sm text-black rounded font-bold px-[22%]  h-[2.5rem] hover:bg-white/80 my-2">
             $26.99 / MONTH
           </button>
           <p className="text-[10px] font-extrabold">SAVE 42%*</p>
@@ -132,37 +157,292 @@ const optionData: Record<
       </div>
     ),
     tableRows: [
-      ["", "Y1"],
-      ["X2", "Y2"],
-      ["X3", "Y3"],
-      ["X4", "Y4"],
-      ["X5", "Y5"],
-      ["X6", "Y6"],
-      ["X7", "Y7"],
-      ["X8", "Y8"],
-      ["X9", "Y9"],
-      ["X10", "Y10"],
-      ["X11", "Y11"],
+      [
+        "Monthly Price. Save up to $19.98/mo.*",
+        <p className="text-sm">
+          <span className="block text-xs text-gray-400 line-through">
+            $31.97/mo.
+          </span>
+          $16.99/mo
+        </p>,
+        <p className="text-sm">
+          <span className="block text-xs text-gray-400 line-through">
+            $46.07/mo.
+          </span>
+          $26.99/mo
+        </p>,
+      ],
+      [
+        "Subscriptions included in each plan",
+        <p className="text-sm">Disney+, Hulu and ESPN+</p>,
+        <p className="text-sm">Disney+, Hulu and ESPN+</p>,
+      ],
+      [
+        "Hulu streaming library with tons of episodes and movies",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Endless entertainment with Disney+",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Most new episodes on Hulu the day after they air†",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Access to award-winning Hulu Originals",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Watch on your favorite devices",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "No ads in Hulu streaming library",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "No ads on Disney+",
+        "-",
+        <p className="text-sm w-[60%] mx-auto">
+          Ads will be served in select live and linear content
+        </p>,
+      ],
+      [
+        "Download and watch on Hulu",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Download and watch on Disney+",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
     ],
   },
   option3: {
     topContent: (
-      <div>
-        <h1>Hi 3</h1>
+      <div className="flex justify-between items-start md:w-[75%] w-full mx-auto">
+        <div className="md:w-1/3 md:block hidden"></div>
+        <div className="md:w-1/3 w-1/2 flex flex-col justify-center items-center">
+          <div className="flex items-center gap-6 my-4">
+            <img src={disney} className="w-16 h-8" alt="disney" />
+            <img src={hulu} className="w-10 h-6" alt="hulu" />
+            <img src={max} className="w-10" alt="max" />
+          </div>
+          <p className="text-xs font-semibold my-2">
+            Disney+, Hulu, Max Bundle
+          </p>
+          <button className="bg-white text-sm text-black rounded font-bold px-[28%] h-[2.5rem] hover:bg-white/80 my-2">
+            LEARN MORE
+          </button>
+        </div>
+        <div className="md:w-1/3 w-1/2 flex flex-col flex-1 justify-center items-center">
+          <div className="flex items-center gap-6 my-4">
+            <img src={disney} className="w-16 h-8" alt="disney" />
+            <img src={hulu} className="w-10 h-6" alt="hulu" />
+            <img src={max} className="w-10" alt="max" />
+          </div>
+          <p className="text-xs font-semibold my-2">
+            Disney+, Hulu, Max Bundle
+          </p>
+          <button className="bg-white text-sm text-black rounded font-bold px-[28%] h-[2.5rem] hover:bg-white/80 my-2">
+            LEARN MORE
+          </button>
+          <p className="text-[10px]">
+            Ads will be served in select live and linear content
+          </p>
+        </div>
       </div>
     ),
-    tableRows: Array.from({ length: 11 }, (_, i) => [
-      `Col2-${i + 1}`,
-      `Col3-${i + 1}`,
-    ]),
+
+    tableRows: [
+      [
+        "Monthly Price. Save up to $21.98/mo.*",
+        <p className="text-sm">
+          <span className="block text-xs text-gray-400 line-through">
+            $29.97/mo.
+          </span>
+          $16.99/mo
+        </p>,
+        <p className="text-sm">
+          <span className="block text-xs text-gray-400 line-through">
+            $51.07/mo.
+          </span>
+          $29.99/mo
+        </p>,
+      ],
+      [
+        "Subscriptions included in each plan",
+        <p className="text-sm">Disney+, Hulu and Max</p>,
+        <p className="text-sm">Disney+, Hulu and Max</p>,
+      ],
+      [
+        "Hulu streaming library with tons of episodes and movies",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Endless entertainment with Disney+",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Access to Max. Watch HBO content in the Hulu app††",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Most new episodes on Hulu the day after they air†",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Access to award-winning Hulu Originals",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Watch on your favorite devices, including TV, laptop, phone, or tablet",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Ad-free streaming",
+        "-",
+       "Ads will be served in select live and linear content"
+      ],
+      [
+        "Download and watch on Disney+",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Download and watch on Hulu",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+    ],
   },
   option4: {
     topContent: (
-      <div>
-        <h1>Hi 4</h1>
+      <div className="flex justify-between md:w-[75%] mx-auto w-full">
+        <div className="md:w-1/3 hidden md:block"></div>
+        <div className="md:w-1/3 w-1/2 flex flex-col justify-center items-center">
+          <button className="text-[10px] font-bold text-black bg-green-500 rounded-2xl p-2">
+            MOST POPULAR
+          </button>
+            <img src={hulu_live} className="w-52" alt="hulu_live" />
+          
+          <button className="bg-white text-sm text-black rounded font-bold px-[22%]  h-[2.5rem] hover:bg-white/80 mb-2 mt-8">
+            $82.99 / Mo.
+          </button>
+          <p className="text-[10px] font-extrabold">3 DAY FREE TRIAL*</p>
+        </div>
+        <div className="md:w-1/3 w-1/2 flex flex-col justify-center items-center">
+          <div className="flex items-center gap-2 my-2">
+            <img src={hulu_live} className="w-52" alt="hulu_live" />
+          </div>
+         
+          <button className="bg-white text-sm text-black rounded font-bold px-[22%]  h-[2.5rem] hover:bg-white/80 mb-2 mt-8">
+            $95.99 / Mo.
+          </button>
+        </div>
       </div>
     ),
-    tableRows: Array.from({ length: 11 }, () => [`---`, `---`]),
+    tableRows: [
+      [
+        "Monthly Price",
+        <p className="text-sm">
+          <span className="block text-xs text-gray-400 line-through">
+            $82.99/mo.
+          </span>
+          $95.99/mo
+        </p>,
+        <p className="text-sm">
+          <span className="block text-xs text-gray-400 line-through">
+            $51.07/mo.
+          </span>
+          $29.99/mo
+        </p>,
+      ],
+      [
+        "Subscriptions included in each plan",
+        <p className="text-sm">Hulu + Live TV, Disney+, and ESPN+</p>,
+        <p className="text-sm">Hulu + Live TV, Disney+, and ESPN+</p>,
+      ],
+      [
+        "Hulu streaming library with tons of episodes and movies",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Endless entertainment with Disney+",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Live sports with ESPN+, now in the Hulu app",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Most new episodes on Hulu the day after they air†",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Access to award-winning Hulu Originals",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Watch on your favorite devices, including TV, laptop, phone, or tablet",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "No ads in Hulu streaming library",
+        "-",
+       "Ads will be served in select live and linear content"
+      ],
+      [
+        "No ads on Disney+",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Download and watch on Hulu",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Download and watch on Disney+",
+        "-",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Live TV on Hulu with 100+ top channels. No cable required.",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Live TV guide to navigate channels",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+      [
+        "Record Live TV with Unlimited DVRRecord Live TV with Unlimited DVR",
+        <img src={checkmark} alt="checkmark" className="inline" />,
+        <img src={checkmark} alt="checkmark" className="inline" />,
+      ],
+    ],
   },
 };
 
@@ -172,7 +452,7 @@ const FourthPage = () => {
   const { topContent, tableRows } = optionData[selectedOption];
 
   return (
-    <div className="bg-black/95 p-20">
+    <div className="bg-black/95 md:p-20 px-2 py-10">
       <div className="text-center text-white">
         <h1 className="md:text-[3rem] py-4 font-bold">Select Your Plan</h1>
         <p className="text-xl">
@@ -197,24 +477,26 @@ const FourthPage = () => {
           {/* Desktop Table */}
           <table className="w-full table-auto text-left mt-10 border-collapse hidden md:table">
             <tbody>
-              {firstColumnData.map((label, index) => (
+              {tableRows.map((row, index) => (
                 <tr key={index} className="border-t border-gray-500">
-                  <td className="py-4 text-sm text-gray-200">{label}</td>
-                  <td className="py-4 text-center text-gray-200">{tableRows[index][0]}</td>
-                  <td className="py-4 text-center text-gray-200">{tableRows[index][1]}</td>
+                  <td className="py-4 text-sm text-gray-200">{row[0]}</td>
+                  <td className="py-4 text-center text-gray-200">{row[1]}</td>
+                  <td className="py-4 text-center text-gray-200">{row[2]}</td>
                 </tr>
               ))}
             </tbody>
           </table>
 
           {/* Mobile View Cards */}
-          <div className="md:hidden flex flex-col gap-4">
-            {firstColumnData.map((label, index) => (
+          <div className="md:hidden flex flex-col gap-4 mt-10">
+            {tableRows.map((row, index) => (
               <div key={index} className="border-t pt-4 pb-2">
-                <div className="text-center mb-2 font-medium">{label}</div>
+                <div className="text-center mb-2 text-sm text-gray-200">
+                  {row[0]}
+                </div>
                 <div className="flex justify-between px-4 text-sm">
-                  <div>{tableRows[index][0]}</div>
-                  <div>{tableRows[index][1]}</div>
+                  <div>{row[1]}</div>
+                  <div>{row[2]}</div>
                 </div>
               </div>
             ))}
