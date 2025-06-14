@@ -1,3 +1,4 @@
+import LastPage from "./components/LastPage"
 import FirstPage from "./components/FirstPage"
 import FourthPage from "./components/FourthPage"
 import SecondPage from "./components/SecondPage"
@@ -10,6 +11,7 @@ const App = () => {
       <SecondPage />
       <ThirdPage />
       <FourthPage />
+      <LastPage />
     </div>
   )
 }

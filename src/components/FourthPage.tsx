@@ -502,7 +502,7 @@ const FourthPage = () => {
             ))}
           </div>
         </div>
-        <div className="text-[10px] text-start border-t border-gray-500 md:w-[75%] mx-auto pt-4 pb-10">
+        <div className="text-[10px] md:text-start border-t border-gray-500 md:w-[75%] mx-auto pt-4 pb-10">
           <p>**Switches from Live TV to Hulu take effect as of the next billing cycle</p>
           <p>†For current-season shows in the streaming library only</p>
           <p>††Live TV channels will include ad breaks</p>
