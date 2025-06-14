@@ -502,6 +502,17 @@ const FourthPage = () => {
             ))}
           </div>
         </div>
+        <div className="text-[10px] text-start border-t border-gray-500 md:w-[75%] mx-auto pt-4 pb-10">
+          <p>**Switches from Live TV to Hulu take effect as of the next billing cycle</p>
+          <p>†For current-season shows in the streaming library only</p>
+          <p>††Live TV channels will include ad breaks</p>
+          <p>Hulu (With Ads) + Live TV Plan $82.99/mo. after 3-day free trial (if any) unless canceled. Cancel anytime. Offer valid for new and eligible returning subscribers only.</p>
+        </div>
+        <div className="border-t border-b border-gray-500 py-4 md:w-[75%] mx-auto text-white/80">
+          <select className="bg-black/10" name="add-ons" id="add-ons">
+            <option value="1">Show Add-ons</option>
+          </select>
+        </div>
       </div>
     </div>
   );
