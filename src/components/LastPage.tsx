@@ -5,8 +5,8 @@ import instagram from "../assets/instagram.svg"
 
 const LastPage = () => {
   return (
-    <div className="px-36 py-16 text-gray-500">
-      <div className="flex justify-evenly mb-28">
+    <div className="md:px-36 px-8 py-16 text-gray-500">
+      <div className="md:flex hidden justify-evenly mb-28">
         <div>
           <ul className="text-sm gap-2 w-[10rem]">
             <p className="text-gray-700 font-semibold text-xs">BROWSE</p>
@@ -64,6 +64,10 @@ const LastPage = () => {
         </div>
       </div>
 
+      <div>
+
+      </div>
+
       <div className="border-t">
         <div className="flex gap-6 pt-12">
           <img src={facebook} alt="facebook" />
@@ -72,7 +76,7 @@ const LastPage = () => {
           <img src={instagram} alt="instagram" />
         </div>
 
-        <div className="text-xs justify-between flex my-6">
+        <div className="text-xs md:justify-between gap-4 md:gap-0 flex flex-wrap my-6">
           <p>© 2025 Hulu, LLC</p>
           <p>About Ads</p>
           <p>Subscriber Agreement</p>
