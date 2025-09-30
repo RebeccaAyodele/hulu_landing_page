@@ -10,10 +10,10 @@ const SecondPage = () => {
       <div className="flex flex-col justify-center items-center p-16">
         <div className=" md:w-[50%]">
           <p className="text-green-400 pb-4">INCLUDED IN ALL PLANS</p>
-          <h1 className="text-white md:text-[4rem] text-3xl font-bold pb-4">
+          <h1 className="text-white md:text-6xl text-3xl font-bold pb-4">
             All The TV You Love
           </h1>
-          <p className="text-white text-lg pb-4">
+          <p className="text-white md:text-lg text-base pb-4">
             Watch full seasons of exclusive streaming series, current-season
             episodes, hit movies, Hulu Originals, kids shows, and more.
           </p>
@@ -50,10 +50,10 @@ const SecondPage = () => {
           <p className="text-green-400 pb-4">
             TRY HULU (WITH ADS) + LIVE TV FREE FOR 3 DAYS
           </p>
-          <h1 className="text-white md:text-[3.3rem] text-3xl font-bold pb-4">
+          <h1 className="text-white md:text-6xl text-3xl font-bold pb-4">
             Watch Live TV From 95+ Channels
           </h1>
-          <p className="text-white md:text-[17px] mb-4 leading-tight">
+          <p className="text-white md:text-lg text-base mb-4 leading-tight">
             Get top national and local channels on Hulu (With Ads) + Live TV
             with your favorite live sports, news, and events - plus the entire
             Hulu streaming library. With Unlimited DVR, store Live TV recordings

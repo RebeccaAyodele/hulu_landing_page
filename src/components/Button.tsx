@@ -1,6 +1,6 @@
 export const ButtonGreenLong = ({text}: {text: string}) => {
   return (
-    <button className="bg-green-400 hover:bg-green-400/80 uppercase font-bold md:w-[20rem] w-52 my-2 h-10 text-sm rounded-md">{text}</button>
+    <button className="bg-green-400 hover:bg-green-400/80 uppercase font-bold md:w-[20rem] w-40 my-2 md:h-10 min-h-10 text-sm rounded-md">{text}</button>
   )
 }
 

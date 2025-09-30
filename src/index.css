@@ -6,16 +6,9 @@
 @tailwind utilities;
 
 
-html,
-body,
-#root {
-    height: 100%;
-    width: 100%;
-    font-family: "Inter", sans-serif;
-}
-
-@media (max-width: 480px) {
-    body {
-        margin-top: 15rem;
-    }
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
 }

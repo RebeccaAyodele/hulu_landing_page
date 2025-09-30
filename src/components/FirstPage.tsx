@@ -122,9 +122,9 @@ const FirstPage = () => {
       </div>
 
       {/* Green */}
-      <div className="bg-gradient-to-t from-slate-800 to-green-500 md:h-[20%] h-[24.5%] flex flex-col justify-evenly items-center">
+      <div className="bg-gradient-to-t from-slate-800 to-green-500 md:h-[25%] h-[24.5%] flex flex-col justify-evenly items-center">
         <p className="text-white font-semibold">BUILD THE PLAN THAT'S RIGHT FOR YOU</p>
-        <button className="text-white border-2 rounded px-4 py-2 font-semibold hover:bg-gray-300 hover:text-black">START BUILDING</button>
+        <button className="text-white border-2 rounded px-4 mt-4 py-2 font-semibold hover:bg-gray-300 hover:text-black">START BUILDING</button>
       </div>
     </div>
   );
