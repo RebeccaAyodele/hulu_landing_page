@@ -3,8 +3,11 @@ import disney from "../assets/disney+.png";
 import max from "../assets/max.png";
 import espn from "../assets/espn.png";
 import { ButtonGreenLong, ButtonGreenShort } from "./Button";
+import { Menu } from "lucide-react";
+import { useState } from "react";
 
 const FirstPage = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="h-screen">
       <div className="md:h-[71.5%] h-[46.5%] bg-black py-4 md:px-8 px-4">
@@ -13,22 +16,15 @@ const FirstPage = () => {
           <div>
             <img src={hulu} className="w-16" alt="hulu" />
           </div>
-          <div className="bg-gray-600 p-2 rounded md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6 stroke-white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
+          <div onClick={() => setOpen(!open)} className="bg-gray-600 p-2 rounded md:hidden">
+            <Menu color="white" />
           </div>
+          {open && (
+        <div className="absolute top-16 right-0 w-[60%] rounded-xl bg-gray-800 text-white flex flex-col items-center py-2 md:hidden z-50">
+          <a href="#" className="text-gray-400 hover:text-white/90 w-[95%] font-semibold rounded text-center text-sm py-3 hover:bg-gray-600 px-6">LOGIN</a>
+          <a href="#" className="text-black font-semibold bg-green-400 rounded text-center px-6 text-sm w-[95%]">TRY HULU FREE FOR ONE MONTH</a>
+        </div>
+      )}
           <div className="hidden md:block md:hover:bg-gray-500 md:py-2 px-4 md:rounded">
             <button className="font-bold text-sm text-gray-300 hover:text-white">
               LOG IN
